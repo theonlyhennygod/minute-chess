@@ -1,5 +1,10 @@
 # Chess Game
 
+## DEMO
+
+https://github.com/theonlyhennygod/minute-chess/assets/144828210/5778ec6d-ace9-4665-9169-dff318560246
+
+
 This is a chess game built using React and Firebase. Here are the technologies used in building this game:
 
 - Front-end Framework: React
