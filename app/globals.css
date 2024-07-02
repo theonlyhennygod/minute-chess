@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Add to your global styles */
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+}
