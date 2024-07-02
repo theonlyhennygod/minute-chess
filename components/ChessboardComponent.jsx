@@ -19,23 +19,11 @@ const ChessboardComponent = () => {
   const [wins, setWins] = useState(0);
   const [losses, setLosses] = useState(0);
   const [userData, setUserData] = useState(null); // State to hold user data from Firestore
-  const db = getFirestore();
 
   const ChessboardComponentNoSSR = dynamic(
     () => import('../components/ChessboardComponent'),
     { ssr: false }
   );
-
-  useEffect(() => {
-    const auth = getAuth();
-    signInAnonymously(auth)
-      .then(({ user }) => {
-        fetchUserData(user.uid);
-      })
-      .catch((error) => {
-        console.error(error.message);
-      });
-  }, []); // Ensure this effect runs only once
 
   const fetchUserData = async (uid) => {
     try {
