@@ -15,3 +15,6 @@ This is a chess game built using React and Firebase. Here are the technologies u
 
 Feel free to explore the code and enjoy playing chess!
 
+# Updates 
+
+Backend is fully implemented but will need to go over the code to figure out a small window object bug. Currently using local storage for anonymous sign in. I plan on adding difficulty levels as well, while playing against the AI. Eventually will even add, play against friends.
