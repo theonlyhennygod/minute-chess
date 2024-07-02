@@ -5,43 +5,18 @@ const Settings = ({ settings, setSettings }) => {
   };
 
   return (
-    <div className="my-4">
-      <label className="block">
-        Color:
-        <select
-          name="color"
-          value={settings.color}
-          onChange={handleChange}
-          className="ml-2 p-1 border rounded"
-        >
-          <option value="white">White</option>
-          <option value="black">Black</option>
-        </select>
-      </label>
+    <div className="my-4 flex justify-center items-center">
       <label className="block mt-2">
         Timer:
         <select
           name="timer"
           value={settings.timer}
           onChange={handleChange}
-          className="ml-2 p-1 border rounded"
+          className="ml-2 p-1 border rounded text-black"
         >
           <option value={3}>3 minutes</option>
           <option value={5}>5 minutes</option>
           <option value={10}>10 minutes</option>
-        </select>
-      </label>
-      <label className="block mt-2">
-        Theme:
-        <select
-          name="theme"
-          value={settings.theme}
-          onChange={handleChange}
-          className="ml-2 p-1 border rounded"
-        >
-          <option value="brown">Brown</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
         </select>
       </label>
       <label className="block mt-2">
@@ -50,7 +25,7 @@ const Settings = ({ settings, setSettings }) => {
           name="difficulty"
           value={settings.difficulty}
           onChange={handleChange}
-          className="ml-2 p-1 border rounded"
+          className="ml-2 p-1 border rounded text-black"
         >
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
