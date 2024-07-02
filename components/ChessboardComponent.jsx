@@ -4,10 +4,10 @@ import React, { useEffect, useState } from "react";
 import { Chess } from "chess.js";
 import Chessboard from "chessboardjsx";
 import { getBestMove } from "../utils/chessAI";
-import dynamic from "next/dynamic";
 import { getAuth, signInAnonymously, onAuthStateChanged } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { doc, getDoc } from "firebase/firestore";
+import dynamic from "next/dynamic";
 
 const ChessboardComponent = () => {
   const [chess, setChess] = useState(new Chess());
@@ -21,8 +21,8 @@ const ChessboardComponent = () => {
   const [userData, setUserData] = useState(null); // State to hold user data from Firestore
   const db = getFirestore();
 
-  const ChessboardComponent = dynamic(
-    () => import("../components/ChessboardComponent"),
+  const ChessboardComponentNoSSR = dynamic(
+    () => import('../components/ChessboardComponent'),
     { ssr: false }
   );
 
