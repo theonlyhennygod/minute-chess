@@ -1,4 +1,5 @@
-// components/Navbar.js
+"use client";
+
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
