@@ -1,17 +1,12 @@
 "use client";
 
-import { useState } from 'react';
 import ChessboardComponent from '../components/ChessboardComponent';
 import Timer from '../components/Timer';
 import Scoreboard from '../components/Scoreboard';
 import { useFirestoreStorage } from '@/utils/useFirestoreStorage';
 
 const Home = () => {
-  const [settings, setSettings] = useFirestoreStorage('settings', {
-    color: 'white',
-    timer: 1,
-    difficulty: 'medium',
-  });
+  const settings = useFirestoreStorage('settings', { color: 'white', timer: 1, difficulty: 'medium' });
   const [wins, setWins] = useFirestoreStorage('wins', 0);
   const [losses, setLosses] = useFirestoreStorage('losses', 0);
 

@@ -1,4 +1,5 @@
-// components/Timer.js
+"use client";
+
 import { useEffect, useState } from "react";
 
 const Timer = ({ initialTime, onTimeEnd }) => {

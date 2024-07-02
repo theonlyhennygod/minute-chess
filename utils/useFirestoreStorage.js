@@ -1,4 +1,5 @@
-// utils/useFirestoreStorage.js
+"use client";
+
 import { useState, useEffect } from 'react';
 import { db } from './firebase';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
